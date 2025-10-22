@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Rebanho Principal",
+    "description": "Rebanho principal de produção de leite",
+    "purpose": "Produção de leite",
+    "property_id": "PROPERTY_ID_AQUI"
+  },
+  {
+    "name": "Matrizes Elite",
+    "description": "Matrizes selecionadas para reprodução",
+    "purpose": "Reprodução",
+    "property_id": "PROPERTY_ID_AQUI"
+  },
+  {
+    "name": "Reprodutores",
+    "description": "Machos reprodutores selecionados",
+    "purpose": "Reprodução",
+    "property_id": "PROPERTY_ID_AQUI"
+  },
+  {
+    "name": "Cabritos Desmamados",
+    "description": "Animais jovens após desmame",
+    "purpose": "Produção de carne",
+    "property_id": "PROPERTY_ID_AQUI"
+  },
+  {
+    "name": "Engorda",
+    "description": "Animais em fase de engorda para abate",
+    "purpose": "Produção de carne",
+    "property_id": "PROPERTY_ID_AQUI"
+  }
+]
+

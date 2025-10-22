@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ivermectina 1%",
+    "description": "Antiparasitário de amplo espectro. Dosagem: 0.2mg/kg SC. Carência: 35 dias. Eficaz contra vermes e ectoparasitas."
+  },
+  {
+    "name": "Moxidectina 1%",
+    "description": "Endectocida de longa ação. Dosagem: 0.2mg/kg SC. Carência: 42 dias. Controle prolongado de parasitas."
+  },
+  {
+    "name": "Oxitetraciclina LA 20%",
+    "description": "Antibiótico de amplo espectro. Dosagem: 20mg/kg IM. Carência: 28 dias. Longa ação, dose única ou repetir após 48h."
+  },
+  {
+    "name": "Penicilina Benzatina",
+    "description": "Antibiótico de longa duração. Dosagem: 40.000 UI/kg IM a cada 48-72h. Carência: 21 dias. Infecções bacterianas."
+  },
+  {
+    "name": "Flunixina Meglumina 5%",
+    "description": "Anti-inflamatório AINE. Dosagem: 2.2mg/kg IM/IV 1x ao dia. Carência: 14 dias. Analgésico e antipirético."
+  },
+  {
+    "name": "Vacina Polivalente Clostridial",
+    "description": "Vacina contra clostridioses (8-10 cepas). Dosagem: 2-5ml SC. Reforço após 30 dias, depois anual. Sem carência."
+  },
+  {
+    "name": "Levamisol 10%",
+    "description": "Anti-helmíntico de amplo espectro. Dosagem: 7.5mg/kg SC ou oral. Carência: 14 dias. Eficaz contra vermes."
+  },
+  {
+    "name": "Sulfadiazina + Trimetoprima",
+    "description": "Associação antibacteriana. Dosagem: 30mg/kg IM a cada 24h por 3-5 dias. Carência: 21 dias."
+  },
+  {
+    "name": "Complexo B Injetável",
+    "description": "Vitaminas B1, B6, B12. Dosagem: 2-5ml IM conforme necessário. Sem carência. Recuperação e stress."
+  },
+  {
+    "name": "Cálcio Gluconato 20%",
+    "description": "Suplemento de cálcio. Dosagem: 50-100ml IV lenta. Sem carência. Hipocalcemia e toxemia da gestação."
+  }
+]

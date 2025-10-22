@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema Verde CAPRINOVAÇÃO */
+:root {
+  --primary-green: #16a34a;
+  --primary-green-hover: #15803d;
+  --primary-green-light: #22c55e;
+  --primary-green-dark: #14532d;
+  --accent-green: #84cc16;
+  --success-green: #10b981;
+  --warning-green: #65a30d;
+}
+
+/* Estilos globais para botões verdes */
+.ant-btn-primary {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--primary-green-hover) !important;
+  border-color: var(--primary-green-hover) !important;
+}
+
+/* Botões de sucesso */
+.ant-btn-success {
+  background-color: var(--success-green) !important;
+  border-color: var(--success-green) !important;
+}
+
+.ant-btn-success:hover {
+  background-color: #059669 !important;
+  border-color: #059669 !important;
+}
+
+/* Botões de perigo/deleção */
+.ant-btn-dangerous {
+  background-color: #dc2626 !important;
+  border-color: #dc2626 !important;
+  color: white !important;
+}
+
+.ant-btn-dangerous:hover {
+  background-color: #b91c1c !important;
+  border-color: #b91c1c !important;
+  color: white !important;
+}
+
+.ant-btn-dangerous:focus {
+  background-color: #dc2626 !important;
+  border-color: #dc2626 !important;
+  color: white !important;
+}
+
+/* Tags verdes */
+.ant-tag-green {
+  background-color: #f0fdf4 !important;
+  border-color: var(--primary-green) !important;
+  color: var(--primary-green) !important;
+}
+
+/* Links verdes */
+.ant-typography a {
+  color: var(--primary-green) !important;
+}
+
+.ant-typography a:hover {
+  color: var(--primary-green-hover) !important;
+}
+
+/* Menu ativo */
+.ant-menu-item-selected {
+  background-color: #f0fdf4 !important;
+  color: var(--primary-green) !important;
+}
+
+.ant-menu-item-selected::after {
+  border-color: var(--primary-green) !important;
+}
+
+/* Inputs focados */
+.ant-input:focus,
+.ant-input-focused {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2) !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2) !important;
+}
+
+/* Checkbox e Radio */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+/* Progress bar */
+.ant-progress-bg {
+  background-color: var(--primary-green) !important;
+}
+
+/* Badge verde */
+.ant-badge-status-green {
+  background-color: var(--primary-green) !important;
+}
+
+/* Card hover effects */
+.ant-card:hover {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15) !important;
+}
+
+/* Tabela */
+.ant-table-thead > tr > th {
+  background-color: #f0fdf4 !important;
+  color: var(--primary-green) !important;
+  font-weight: 600 !important;
+}
+
+/* Paginação */
+.ant-pagination-item-active {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+/* Steps */
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+/* Tabs */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-green) !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color: var(--primary-green) !important;
+}
+
+/* Modal e Drawer */
+.ant-modal-header {
+  background-color: #f0fdf4 !important;
+  border-bottom-color: var(--primary-green) !important;
+}
+
+.ant-drawer-header {
+  background-color: #f0fdf4 !important;
+  border-bottom-color: var(--primary-green) !important;
+}
+
+/* Notificações */
+.ant-notification-notice-success {
+  border-left-color: var(--success-green) !important;
+}
+
+/* Tooltip */
+.ant-tooltip-inner {
+  background-color: var(--primary-green) !important;
+}
+
+.ant-tooltip-arrow::before {
+  background-color: var(--primary-green) !important;
+}
+
+/* Scrollbar personalizada para o menu lateral */
+.ant-layout-sider::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Padding no menu para evitar corte */
+.ant-menu {
+  padding-bottom: 20px !important;
+}

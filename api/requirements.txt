@@ -1,0 +1,19 @@
+# FastAPI e servidor
+fastapi>=0.119.0
+uvicorn[standard]>=0.37.0
+
+# ORM e banco de dados
+sqlmodel>=0.0.27
+psycopg2-binary>=2.9.9
+
+# Configuração e ambiente
+pydantic-settings>=2.11.0
+python-dotenv>=1.0.1
+
+# Autenticação e segurança
+python-jose[cryptography]>=3.5.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.20
+
+# Validação de dados
+pydantic>=2.12.1

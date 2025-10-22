@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Fazenda São João",
+    "state": "PE",
+    "city": "Caruaru",
+    "address": "Rodovia PE-160, Km 15, s/n - Zona Rural",
+    "cep": "55000-000",
+    "cpf_cnpj": "12.345.678/0001-90",
+    "state_registration": "123456789",
+    "phone": "(81) 99999-1111",
+    "area": 150.5
+  },
+  {
+    "name": "Sítio Boa Vista",
+    "state": "PE",
+    "city": "Gravatá",
+    "address": "Estrada Municipal, Km 8 - Zona Rural",
+    "cep": "55640-000",
+    "cpf_cnpj": "98.765.432/0001-10",
+    "state_registration": "987654321",
+    "phone": "(81) 98888-2222",
+    "area": 85.0
+  },
+  {
+    "name": "Chácara Santa Rita",
+    "state": "PE",
+    "city": "Bezerros",
+    "address": "Sítio Santa Rita, s/n - Zona Rural",
+    "cep": "55660-000",
+    "cpf_cnpj": "11.222.333/0001-44",
+    "state_registration": "112233445",
+    "phone": "(81) 97777-3333",
+    "area": 45.8
+  },
+  {
+    "name": "Fazenda Vale Verde",
+    "state": "PE",
+    "city": "Arcoverde",
+    "address": "BR-232, Km 250 - Zona Rural",
+    "cep": "56500-000",
+    "cpf_cnpj": "22.333.444/0001-55",
+    "state_registration": "223344556",
+    "phone": "(87) 96666-4444",
+    "area": 320.0
+  },
+  {
+    "name": "Sítio Primavera",
+    "state": "PE",
+    "city": "São Bento do Una",
+    "address": "Estrada da Primavera, s/n - Zona Rural",
+    "cep": "55670-000",
+    "cpf_cnpj": "33.444.555/0001-66",
+    "state_registration": "334455667",
+    "phone": "(81) 95555-5555",
+    "area": 62.3
+  }
+]

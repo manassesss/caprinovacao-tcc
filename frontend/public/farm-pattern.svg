@@ -1,0 +1,19 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="farm-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Grass/field pattern -->
+      <path d="M0 80 Q 25 70, 50 80 T 100 80" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M0 85 Q 30 75, 60 85 T 100 85" stroke="rgba(255,255,255,0.1)" fill="none" stroke-width="2"/>
+      <path d="M0 90 Q 20 82, 40 90 T 100 90" stroke="rgba(255,255,255,0.12)" fill="none" stroke-width="2"/>
+      
+      <!-- Simple goat silhouettes -->
+      <circle cx="30" cy="60" r="3" fill="rgba(255,255,255,0.08)"/>
+      <ellipse cx="32" cy="62" rx="4" ry="2" fill="rgba(255,255,255,0.08)"/>
+      
+      <circle cx="70" cy="55" r="3" fill="rgba(255,255,255,0.06)"/>
+      <ellipse cx="72" cy="57" rx="4" ry="2" fill="rgba(255,255,255,0.06)"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#farm-pattern)"/>
+</svg>
+

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Verminose Gastrointestinal",
+    "cause": "Haemonchus contortus e outros nematódeos",
+    "symptoms": "Anemia, perda de peso, diarreia, edema submandibular (papeira), pelagem áspera",
+    "treatment": "Vermífugos: ivermectina, moxidectina, levamisol. Dosagem conforme peso e princípio ativo.",
+    "prophylaxis": "Manejo de pastagens rotacionado, FAMACHA, vermifugação estratégica, evitar superlotação"
+  },
+  {
+    "name": "Mastite",
+    "cause": "Bactérias (Staphylococcus, Streptococcus), trauma, má higiene",
+    "symptoms": "Úbere inchado, quente e dolorido, leite alterado (grumos, cor), febre, perda de apetite",
+    "treatment": "Antibióticos (oxitetraciclina, penicilina), anti-inflamatórios, ordenha frequente das tetas afetadas",
+    "prophylaxis": "Higiene rigorosa na ordenha, desinfecção de tetas pré e pós-ordenha, ambiente limpo e seco"
+  },
+  {
+    "name": "Clostridioses",
+    "cause": "Bactérias anaeróbias do gênero Clostridium (perfringens, tetani, etc)",
+    "symptoms": "Morte súbita, timpanismo, diarreia sanguinolenta, incoordenação motora, rigidez muscular",
+    "treatment": "Geralmente fatal. Em casos iniciais: penicilina em altas doses, tratamento de suporte",
+    "prophylaxis": "Vacinação anual com vacina polivalente (8 ou 10 cepas), evitar mudanças bruscas na dieta"
+  },
+  {
+    "name": "Ceratoconjuntivite",
+    "cause": "Moraxella ovis (bactéria), moscas, poeira, luz UV intensa",
+    "symptoms": "Olhos lacrimejantes, vermelhidão, fotofobia, opacidade da córnea, cegueira temporária",
+    "treatment": "Antibióticos tópicos (colírios), injeções de oxitetraciclina LA, proteção dos olhos",
+    "prophylaxis": "Controle de moscas, isolamento de animais infectados, evitar poeira excessiva"
+  },
+  {
+    "name": "Ectima Contagioso",
+    "cause": "Vírus Parapoxvirus (Orf virus)",
+    "symptoms": "Crostas e lesões pustulares ao redor da boca, focinho, úbere e entre as unhas",
+    "treatment": "Autolimitante (2-4 semanas). Tratamento sintomático: desinfecção, pomadas cicatrizantes",
+    "prophylaxis": "Vacinação preventiva, isolamento de animais doentes, desinfecção de instalações"
+  },
+  {
+    "name": "Pneumonia",
+    "cause": "Bactérias (Pasteurella, Mannheimia), vírus, stress, mudanças climáticas",
+    "symptoms": "Tosse, corrimento nasal, dificuldade respiratória, febre alta, apatia",
+    "treatment": "Antibióticos (oxitetraciclina, enrofloxacina), anti-inflamatórios, ambiente seco",
+    "prophylaxis": "Evitar aglomeração e ambientes úmidos, vacinação, reduzir stress"
+  },
+  {
+    "name": "Linfadenite Caseosa",
+    "cause": "Corynebacterium pseudotuberculosis (bactéria)",
+    "symptoms": "Abscessos (caroços) nos linfonodos, principalmente pescoço e região inguinal",
+    "treatment": "Drenagem cirúrgica dos abscessos, antibióticos sistêmicos (penicilina benzatina)",
+    "prophylaxis": "Vacinação preventiva, isolamento de animais com abscessos, desinfecção rigorosa"
+  },
+  {
+    "name": "Coccidiose",
+    "cause": "Protozoários do gênero Eimeria",
+    "symptoms": "Diarreia (às vezes com sangue), desidratação, perda de peso, pelo arrepiado",
+    "treatment": "Sulfas (sulfaquinoxalina), amprólio, tratamento de suporte (hidratação oral/IV)",
+    "prophylaxis": "Higiene rigorosa das instalações, evitar superlotação, uso preventivo de cocidiostáticos"
+  },
+  {
+    "name": "Pododermatite",
+    "cause": "Bactérias (Fusobacterium necrophorum, Dichelobacter nodosus), umidade",
+    "symptoms": "Claudicação (manqueira), cascos quentes e inchados, mau cheiro, separação do casco",
+    "treatment": "Limpeza e casqueamento, antibióticos (penicilina, oxitetraciclina), pedilúvio",
+    "prophylaxis": "Pedilúvio regular (sulfato de cobre 5%), casqueamento preventivo, ambientes secos"
+  },
+  {
+    "name": "Toxoplasmose",
+    "cause": "Toxoplasma gondii (protozoário)",
+    "symptoms": "Abortos no terço final da gestação, natimortos, fetos mumificados",
+    "treatment": "Não há tratamento eficaz para animais gestantes",
+    "prophylaxis": "Controle rigoroso de gatos, evitar água e alimentos contaminados, manejo sanitário"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Anglo Nubiana",
+    "origin": "Inglaterra",
+    "general_aspects": "Aptidão mista (leite e carne), pelagem variada, orelhas longas e pendentes. Peso médio: M=90kg F=65kg"
+  },
+  {
+    "name": "Boer",
+    "origin": "África do Sul",
+    "general_aspects": "Aptidão para carne, crescimento rápido, pelagem branca com cabeça marrom. Peso médio: M=110kg F=80kg"
+  },
+  {
+    "name": "Saanen",
+    "origin": "Suíça",
+    "general_aspects": "Aptidão leiteira, pelagem branca ou creme, sem chifres. Peso médio: M=85kg F=60kg"
+  },
+  {
+    "name": "Alpina",
+    "origin": "Alpes Franceses",
+    "general_aspects": "Aptidão leiteira, pelagem variada, porte médio. Peso médio: M=80kg F=55kg"
+  },
+  {
+    "name": "Parda Alpina",
+    "origin": "Suíça",
+    "general_aspects": "Aptidão leiteira, pelagem marrom, produção elevada de leite. Peso médio: M=75kg F=52kg"
+  },
+  {
+    "name": "Santa Inês",
+    "origin": "Brasil",
+    "general_aspects": "Aptidão para carne, pelagem variada, adaptada ao clima tropical. Peso médio: M=90kg F=60kg"
+  },
+  {
+    "name": "Dorper",
+    "origin": "África do Sul",
+    "general_aspects": "Aptidão para carne, pelagem branca com cabeça preta, sem lã. Peso médio: M=100kg F=70kg"
+  },
+  {
+    "name": "Morada Nova",
+    "origin": "Brasil (Nordeste)",
+    "general_aspects": "Resistente à seca, pelagem variada, porte pequeno a médio. Peso médio: M=50kg F=35kg"
+  },
+  {
+    "name": "SRD (Sem Raça Definida)",
+    "origin": "Brasil",
+    "general_aspects": "Mestiça, adaptação local, características variadas. Peso médio: M=60kg F=45kg"
+  },
+  {
+    "name": "Mestiço Leiteiro",
+    "origin": "Brasil",
+    "general_aspects": "Cruzamento de raças leiteiras, boa produção de leite. Peso médio: M=70kg F=50kg"
+  }
+]
