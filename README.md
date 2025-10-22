@@ -4,12 +4,28 @@ Sistema completo para gestão de rebanhos caprinos com módulo de acasalamento e
 
 ## 🚀 Como Rodar a Aplicação
 
-### Pré-requisitos
+### Opção 1: Docker (Recomendado) 🐳
+
+```bash
+# Subir toda a aplicação com Docker
+docker-compose up --build
+
+# Ou em background
+docker-compose up -d --build
+```
+
+**Aplicação rodará em:**
+- Frontend: http://localhost:3000
+- Backend: http://localhost:8000
+
+### Opção 2: Manual
+
+#### Pré-requisitos
 - Python 3.9+
 - Node.js 16+
 - npm ou yarn
 
-### 1. Backend (API)
+#### 1. Backend (API)
 ```bash
 # Entrar na pasta da API
 cd api
@@ -22,7 +38,7 @@ python start.py
 ```
 **Backend rodará em:** http://localhost:8000
 
-### 2. Frontend
+#### 2. Frontend
 ```bash
 # Entrar na pasta do frontend
 cd frontend
@@ -54,6 +70,23 @@ tcc/
 ## 📚 Documentação da API
 
 Acesse: http://localhost:8000/docs
+
+## 🐳 Comandos Docker Úteis
+
+```bash
+# Parar os containers
+docker-compose down
+
+# Ver logs
+docker-compose logs
+
+# Reconstruir containers
+docker-compose up --build
+
+# Executar comandos no container
+docker-compose exec api python -c "print('Hello from API')"
+docker-compose exec frontend npm run build
+```
 
 ## 🎯 Acesso à Aplicação
 

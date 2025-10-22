@@ -1,0 +1,55 @@
+# Arquivos e pastas a serem ignorados pelo Docker
+
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build
+.next/
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
