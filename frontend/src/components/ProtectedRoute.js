@@ -17,11 +17,13 @@ export default function ProtectedRoute({ children }) {
     // Se não está autenticado e não está numa página pública, redireciona para login
     if (!loading && !isAuthenticated && !publicPages.includes(pathname)) {
       router.push('/login');
+      return;
     }
     
     // Se está autenticado e está numa página de login/registro, redireciona para home
     if (!loading && isAuthenticated && (pathname === '/login' || pathname === '/register')) {
       router.push('/');
+      return;
     }
   }, [isAuthenticated, loading, pathname, router]);
 

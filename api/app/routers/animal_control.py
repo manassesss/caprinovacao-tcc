@@ -8,6 +8,7 @@ import time
 
 from app.core.db import get_session
 from app.core.auth import get_current_active_user
+from app.core.optimizations import check_permission_optimized
 from app.models.animal_control import AnimalMovement, ClinicalOccurrence, ParasiteControl, Vaccination, VaccinationAnimal
 from app.models.user import User
 from app.models.property import Property
@@ -69,16 +70,21 @@ def list_movements(
     session: Session = Depends(get_session),
 ):
     """Lista movimentações de animais"""
-    statement = select(AnimalMovement)
+    # Verifica permissão otimizada
+    is_authorized, allowed_properties = check_permission_optimized(
+        session, current_user, property_id
+    )
     
-    if current_user.is_producer:
-        producer_properties = session.exec(select(Property.id).where(Property.producer_id == current_user.id)).all()
-        if not producer_properties:
-            return []
-        statement = statement.where(AnimalMovement.property_id.in_(producer_properties))
-    elif not current_user.is_admin:
+    if not is_authorized:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
     
+    statement = select(AnimalMovement)
+    
+    # Aplica filtro de propriedades se necessário
+    if allowed_properties:
+        statement = statement.where(AnimalMovement.property_id.in_(allowed_properties))
+    
+    # Filtros adicionais
     if property_id:
         statement = statement.where(AnimalMovement.property_id == property_id)
     if animal_id:
@@ -169,15 +175,19 @@ def list_occurrences(
     session: Session = Depends(get_session),
 ):
     """Lista ocorrências clínicas"""
+    # Verifica permissão otimizada
+    is_authorized, allowed_properties = check_permission_optimized(
+        session, current_user, property_id
+    )
+    
+    if not is_authorized:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    
     statement = select(ClinicalOccurrence)
     
-    if current_user.is_producer:
-        producer_properties = session.exec(select(Property.id).where(Property.producer_id == current_user.id)).all()
-        if not producer_properties:
-            return []
-        statement = statement.where(ClinicalOccurrence.property_id.in_(producer_properties))
-    elif not current_user.is_admin:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    # Aplica filtro de propriedades se necessário
+    if allowed_properties:
+        statement = statement.where(ClinicalOccurrence.property_id.in_(allowed_properties))
     
     if property_id:
         statement = statement.where(ClinicalOccurrence.property_id == property_id)
@@ -246,15 +256,19 @@ def list_parasite_controls(
     session: Session = Depends(get_session),
 ):
     """Lista controles parasitários"""
+    # Verifica permissão otimizada
+    is_authorized, allowed_properties = check_permission_optimized(
+        session, current_user, property_id
+    )
+    
+    if not is_authorized:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    
     statement = select(ParasiteControl)
     
-    if current_user.is_producer:
-        producer_properties = session.exec(select(Property.id).where(Property.producer_id == current_user.id)).all()
-        if not producer_properties:
-            return []
-        statement = statement.where(ParasiteControl.property_id.in_(producer_properties))
-    elif not current_user.is_admin:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    # Aplica filtro de propriedades se necessário
+    if allowed_properties:
+        statement = statement.where(ParasiteControl.property_id.in_(allowed_properties))
     
     if property_id:
         statement = statement.where(ParasiteControl.property_id == property_id)
@@ -321,15 +335,19 @@ def list_vaccinations(
     session: Session = Depends(get_session),
 ):
     """Lista vacinações"""
+    # Verifica permissão otimizada
+    is_authorized, allowed_properties = check_permission_optimized(
+        session, current_user, property_id
+    )
+    
+    if not is_authorized:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    
     statement = select(Vaccination)
     
-    if current_user.is_producer:
-        producer_properties = session.exec(select(Property.id).where(Property.producer_id == current_user.id)).all()
-        if not producer_properties:
-            return []
-        statement = statement.where(Vaccination.property_id.in_(producer_properties))
-    elif not current_user.is_admin:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
+    # Aplica filtro de propriedades se necessário
+    if allowed_properties:
+        statement = statement.where(Vaccination.property_id.in_(allowed_properties))
     
     if property_id:
         statement = statement.where(Vaccination.property_id == property_id)

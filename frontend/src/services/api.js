@@ -91,8 +91,20 @@ export async function changePassword(oldPassword, newPassword) {
 
 // ============ ANIMAIS ============
 
-export async function getAnimals() {
-  return apiRequest('/animals/');
+export async function getAnimals(filters = {}) {
+  const params = new URLSearchParams();
+  
+  // Adiciona filtros se existirem
+  if (filters.q) params.append('q', filters.q);
+  if (filters.property_id) params.append('property_id', filters.property_id);
+  if (filters.herd_id) params.append('herd_id', filters.herd_id);
+  if (filters.skip) params.append('skip', filters.skip);
+  if (filters.limit) params.append('limit', filters.limit);
+  
+  const queryString = params.toString();
+  const url = queryString ? `/animals/?${queryString}` : '/animals/';
+  
+  return apiRequest(url);
 }
 
 export async function getAnimal(id) {

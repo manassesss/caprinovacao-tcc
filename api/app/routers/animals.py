@@ -5,6 +5,7 @@ from sqlmodel import Session, select
 from pydantic import BaseModel, validator
 from app.core.db import get_session
 from app.core.auth import get_current_active_user
+from app.core.optimizations import check_permission_optimized
 from app.models.animal import Animal
 from app.models.animal_measurements import WeightRecord, ParasiteRecord, BodyMeasurement, CarcassMeasurement
 from app.models.user import User
@@ -107,17 +108,21 @@ def list_animals(
     session: Session = Depends(get_session),
 ):
     """Lista animais do usuário logado"""
-    statement = select(Animal)
+    # Verifica permissão otimizada
+    is_authorized, allowed_properties = check_permission_optimized(
+        session, current_user, property_id
+    )
     
-    if current_user.is_producer:
-        # Produtor vê apenas animais de suas fazendas
-        producer_properties = session.exec(select(Property.id).where(Property.producer_id == current_user.id)).all()
-        if not producer_properties:
-            return []
-        statement = statement.where(Animal.property_id.in_(producer_properties))
-    elif not current_user.is_admin:
+    if not is_authorized:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
     
+    statement = select(Animal)
+    
+    # Aplica filtro de propriedades se necessário
+    if allowed_properties:
+        statement = statement.where(Animal.property_id.in_(allowed_properties))
+    
+    # Filtros de busca
     if q:
         statement = statement.where(
             (Animal.earring_identification.ilike(f"%{q}%")) | 
